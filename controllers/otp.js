@@ -13,7 +13,7 @@ const client = require("twilio")(
 
 exports.sendOtp = (req, res) => {
   client.verify
-    .services(process.env.SERVICE_ID)
+    .services(VAa893b0eeac63102be7387e1b4847e20b)
     .verifications.create({
       to: `+91${req.body.phoneNumber}`,
       channel: "sms",
